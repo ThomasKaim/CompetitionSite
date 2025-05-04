@@ -1,4 +1,5 @@
 ﻿using LightNap.Core.Api;
+using LightNap.Core.Competitions.Extensions;
 using LightNap.Core.Data;
 using LightNap.Core.Data.Entities;
 using LightNap.Core.Data.Extensions;

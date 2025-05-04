@@ -1,4 +1,6 @@
-﻿using LightNap.Core.Data.Converters;
+﻿using LightNap.Core.Competitions.Dto.Response;
+using LightNap.Core.Competitions.Entities;
+using LightNap.Core.Data.Converters;
 using LightNap.Core.Data.Entities;
 using LightNap.Core.Profile.Dto.Response;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -12,6 +14,7 @@ namespace LightNap.Core.Data
     /// </summary>
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
+        public DbSet<Competition> Competitions { get; set; } = null!;
         /// <summary>
         /// Notifications in the DB.
         /// </summary>
